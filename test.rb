@@ -4,10 +4,22 @@ require 'pry'
 class ListAnalyzer
 end
 
+# help
+
+def it_can_check_a_whole_list_for_matches
+  return true
+  if @letter = ["a", "e", "i", "o", "u", "y"]
+  else 
+    return false 
+  end
+end
+
+
 
 class ListTest < MiniTest::Test
   def test_it_can_count_vowels
     produce = ["apricot", "beet", "clementine", "date", "elderberry"]
+    binding.pry
 
     lister = ListAnalyzer.new
 
